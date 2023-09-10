@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(207, 205, 203);
+}
+nav{
+    background-color: rgb(6, 6, 78);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+.left-nav ul{
+    display: flex;
+}
+nav ul li{
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2% ;
+    padding-left: 5%;
+    list-style: none;
+    font-size: .9rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 255, 238);
+}
+nav ul li:hover{
+    background-color: rgb(62, 62, 208);
+    /* font-size: 1.5rem; */
+    border: 3px solid white;
+    border-radius: 2px;
+    text-shadow: 4px 4px 8px rgb(0, 0, 0);
+}
+.about-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.about{
+    width: 60vw;
+    /* height: 69vh; */
+    background-color: rgb(3, 6, 85);
+    border-radius: 6px;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: 10px 10px 5px rgb(79, 77, 77);
+    border: 2px solid orangered;
+}
+.myphoto{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.myphoto img{
+    width: 10vw;
+    height: 11vw;
+    border: 3px solid orangered;
+    border-radius: 50%;
+}
+.myabout{
+    color: rgb(0, 221, 255);
+    text-align: left;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+footer{
+    position: relative;
+    top: 13vh;
+    background-color: rgb(8, 8, 83);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    height: 8vh;
+}

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;   
+}
+body{
+    background-color: rgb(36, 3, 66);
+    /* height: 100vh; */
+}
+nav{
+    background-color: rgb(6, 6, 78);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 0 12px;
+}
+/* .left-nav{
+
+} */
+.left-nav ul{
+    display: flex;
+    width: 450px;
+}
+.left-nav ul li{
+    list-style: none;
+    color: rgb(0, 255, 238);
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: .9rem;
+}
+.left-nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 255, 238);
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.left-nav ul li:hover{
+    border: 3px solid white;
+    border-radius: 4px;
+    background-color: rgb(62, 62, 208);
+    color: orangered;
+    text-shadow: 4px 4px 8px rgb(0, 0, 0);
+}
+.hor-line{
+    height: 0.1vh;
+    background-color: white;
+}
+.right-nav{
+    
+    color: rgb(111, 224, 236);
+    display: flex;
+    align-items: center;
+}
+.right-nav i{
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 150%;
+   
+}
+.Resume{
+    background-color: rgb(210, 105, 0);
+    border-radius: 4px;
+    color: white;
+    width: 5vw;
+    height: 4vh;
+    cursor: pointer;
+    transition: width .5s ease-out;
+}
+.Resume:hover{
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 6vw;
+    font-size: 1rem;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    color: rgb(255, 153, 0);
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+#web-dev{
+    height: 20vh;
+    width: 18vw;
+    border-radius: 6px;
+    margin-right: 5%;
+    /* padding-bottom: 5%; */
+    margin-bottom: 5%;
+    border: 2px solid white;
+    /* transition: width 1.5s ease-out; */
+}
+#ai-ml{
+    height: 20vh;
+    width: 18vw;
+    border-radius: 6px;
+    /* padding-bottom: 5%; */
+    margin-bottom: 5%;
+    border: 2px solid white;
+    /* transition: width 1.5s ease-out; */
+}
+.projects img:hover{
+    cursor: pointer;
+    height: 22vh;
+    width: 20vw;
+    border: 6px solid white;
+    box-shadow: 10px 10px 5px rgb(194, 189, 197);
+}
+#web-dev a{
+    text-decoration: none;
+    color: rgb(255, 153, 0);
+}
+#ai-ml a{
+    text-decoration: none;
+    color: rgb(255, 153, 0);
+}
+footer{
+    background-color: rgb(8, 8, 83);
+    color: white;
+    position: relative;
+    top: 395px;
+    height: 8.3vh;
+    font-weight: 600;
+    text-align: center;
+}

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: rgb(36, 32, 32);
+}
+nav{
+    background-color: rgb(62, 18, 62);
+    color: rgb(229, 209, 239);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    color: rgb(229, 209, 239);
+    font-weight: 700;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 5%;
+}
+.ginfo{
+    color: rgb(4, 216, 4);
+    text-align: center;
+}
+.ginfo p{
+    font-size: 3vh;
+    font-family:cursive;
+}
+
+.win-img img{
+    height:0;
+    transition:height 3s ease-in;
+    margin-top: 4%;
+}
+.game-container{
+    display: grid;
+    grid-template-rows: repeat(3,5vw);
+    grid-template-columns: repeat(3,5vw);   
+    margin-right: 5%;
+}
+.game-container div{
+    border: 2px solid rgb(83, 255, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+}
+.b-text{
+    font-size: 5vw;
+    color: orange;
+}
+.box:hover{
+    background-color: rgb(54, 69, 201);
+    cursor: pointer;
+}
+#restart{
+    background-color: rgb(255, 94, 0);
+    width: 8vw;
+    border-radius: 4px;
+    border-color: rgb(124, 124, 253);
+    border-width: 6px;
+    font-size: 1.5vw;
+    transition: width 2s;
+}
+#restart:hover{
+    width:16vw;
+    background-color: black;
+    color: rgb(113, 113, 174);
+    font-weight:700;
+}
+@media screen and (max-width:1000px)
+{
+    .container{
+        flex-wrap: wrap;
+    }
+    .ginfo{
+        margin-top: 5%;
+        text-align: center;
+    }
+    #restart{
+        width: 34vw;
+        font-size: 1.5rem;
+    }
+    #restart:hover{
+        width:68vw;
+        background-color: black;
+        color: rgb(113, 113, 174);
+        font-weight:700;
+    }
+    .game-container{
+        /* display: grid; */
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);   
+        /* margin-right: 5%; */
+    }
+}

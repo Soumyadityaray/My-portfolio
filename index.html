@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumyaditya's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left-nav">
+                <ul>
+                    <li><a href="index.html"><pre>Home</pre></a></li>
+                    <li><a href="About.html"><pre>About me</pre></a></li>
+                    <li><a href="projects.html"><pre>Projects</pre></a></li>
+                    <li><a href="contact.html"><pre>Contact me</pre></a></li>
+                </ul>
+            </div>
+            <div class="right-nav">
+               <span>Soumyaditya's</span> 
+               <br>
+               <span>Portfolio</span>
+            </div>
+        </nav>
+        <div class="hor-line"></div>
+    </header>
+    <main>
+        <div class="sections">
+            <div class="left-sec">
+               Hey! This is Soumyaditya here.
+               <br>
+               This is My port folio.
+               <br>
+               <span id="element"></span>
+               <br>
+               <a href="Soumyaditya's Resume (5).pdf"><button class="btn1">Download Resume</button></a>
+            </div>
+            <div class="right-sec">
+               <img src="portfolio.webp" alt=""> 
+            </div>
+        </div>
+        <div class="line-hor"></div>
+        <!-- <div class="summary">
+            Brief summary of my Qualifications and Achivements.
+        </div> -->
+        <div class="btn">
+            <button class="know-more" onclick="typewrite()">Know More</button>
+        </div>
+        <div class="know">
+          
+        </div>
+        <div class="project-about">
+            <a href="/projects.html" id="project-img">      
+                <img src="projects.jpg" alt="">
+            </a>
+            <a href="/contact.html" id="contact-me">
+                <img src="contactme.png" alt="">
+            </a>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy;Soumyaditya Ray.
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    // setInterval()
+    var typed = new Typed('#element', {
+      strings: ['C', 'C++','HTML','CSS','Javascript','OOPs','DBMS','Machine Learning'],
+      typeSpeed: 50,
+      loop:true
+    });
+    // for(let i=0;i<5;i++){
+    //      typed }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(242, 106, 165);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    /* background-image: url(zhakas_back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: linear-gradient(rgb(180, 27, 121),rgb(54, 54, 181));
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+.calc-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.calc{
+    border: .5vh solid rgb(31, 29, 29);
+    border-radius: 6px;
+    background-color: aqua;
+    padding: 2%;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 5vw;
+    height: 6vh;
+    margin: 0%;
+    color: rgb(181, 146, 213);
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: rgb(79, 77, 77);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 2px solid white;
+}
+.btn:active{
+    background-color: rgb(13, 13, 115);
+}
+.btn-0{
+    width: 20.4vw;
+    height: 6vh;
+    margin: 1%;
+    color: rgb(181, 146, 213);
+    font-weight: 700;
+    font-size: 1.5rem;
+    background-color: rgb(79, 77, 77);
+    cursor: pointer;          
+}
+.btn-0:hover{
+    border: 2px solid white;
+}
+.btn-0:active{
+    background-color: rgb(13, 13, 115);
+}
+#cal-display{
+    width: 19.5vw;
+    height: 5vh;
+    border: none;
+    font-size: 2rem;
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: aqua;
+    color: black;
+}
+
+@media screen and (max-width:1000px){
+    body{
+        /* background-image: url(zhakas_back.jpg);
+        background-size: 100vh;
+        background-repeat: no-repeat; */
+        /* background-image: url(zhakas_back.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150vh; */
+    }
+        .btn{
+            width: 15vw;
+            height: 10vh;
+            margin: 1%;
+            color: rgb(181, 146, 213);
+            font-weight: 700;
+            font-size: 4vh;
+            background-color: rgb(79, 77, 77);
+            border-radius: 4px;
+        }
+        #cal-display{
+            width: 56vw;
+            height: 12vh;
+            font-size: 2rem;
+            border-radius: 10px;
+            padding: 4%;
+        }
+        .calc{
+            border: .5vh solid white;
+            border-radius: 10px;
+        }
+        .btn-0{
+            width: 60vw;
+        }
+}

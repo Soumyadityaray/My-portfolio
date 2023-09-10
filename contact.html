@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Times New Roman', Times, serif;
+        }
+        body{
+            /* background-color: rgb(103, 225, 215); */
+            background-color: rgb(36, 3, 66);
+        }
+        nav{
+            background-color: rgb(6, 6, 78);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 8vh;
+        }
+        .left-nav{
+            /* width: 450px; */
+            /* margin-right: 50%; */
+        }
+        .left-nav ul{
+            display: flex;
+        }
+        nav ul li{
+            padding-right: 4%;
+            padding-top: 2%;
+            padding-bottom: 2% ;
+            padding-left: 4%;
+            list-style: none;
+            font-size: .9rem;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(0, 255, 238);
+        }
+        nav ul li:hover{
+            background-color: rgb(62, 62, 208);
+            /* font-size: 1.5rem; */
+            border: 3px solid white;
+            border-radius: 2px;
+            text-shadow: 4px 4px 8px rgb(0, 0, 0);
+        }
+        .hor-line{
+            background-color: white;
+            height: .1vh;
+        }
+        .port-img{
+           color: white;
+          
+        }
+        .phone-wapp-gmail{
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 5% ;
+            margin-top: 2%;
+        }
+        .phone-no{
+            text-align: center;
+            margin-right: 5%;
+            /* background-color: white; */
+            padding-left: 2%;
+            padding-right: 2%;
+            color: white;
+        }
+        .image{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 4px;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+        .phone-no img:hover{
+            /* cursor: pointer; */
+            border: 3px solid black;
+            border-radius: 6px;
+            height: 120px;
+            width: 120px;
+        }
+        .git
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .github{
+            text-align: center;
+            margin-right: 5%;
+            /* background-color: white; */
+            padding-left: 2%;
+            padding-right: 2%;
+            color: white;
+        }
+        .github img:hover{
+            /* background-color: rgb(191, 172, 210); */
+            border: 3px solid black;
+            border-radius: 6px;
+            height: 120px;
+            width: 120px;
+        }
+        footer{
+            position: relative;
+            bottom: -320px;
+            background-color: rgb(8, 8, 83);
+            color: white;
+            height: 8vh;
+            text-align: center;
+            font-weight: 600;
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <div class="left-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html"><pre>About me</pre></a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html"><pre>Contact me</pre></a></li>
+            </ul>
+        </div>
+        <div class="port-img">
+            Hey! Welcome to Contacts.
+        </div>
+    </nav>
+    <main>
+        <div class="hor-line"></div>
+        <div class="phone-wapp-gmail">
+            <div class="phone-no">
+                    <img src="phone-img.jpg" alt="Phone image" class="image">
+                <div>phone no: 7797011224</div>
+            </div>
+            <div class="wapp-no phone-no">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" class="image">
+                <div>whatsapp no: 7797011224</div>
+            </div>
+            <div class="wapp-no phone-no">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" class="image">
+                <div>Email: raysoumyaditya@gmail.com</div>
+                <!-- <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a> -->
+            </div>
+        </div>
+        <div class="git">
+            <!-- <div class="github">
+                <a href="https://github.com/Soumyadityaray">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" class="image">                    
+                </a>
+                <div>My Git Hub</div>
+            </div> -->
+            <div class="linkedin github">
+                <a href="https://www.linkedin.com/in/soumyaditya-ray-b58737277/">
+                    <img src="https://1000logos.net/wp-content/uploads/2023/01/LinkedIn-logo.png" class="image">
+                </a>
+                <div>My Linked in</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Personal Portfolio
+    </footer>
+        <script>
+            let a=document.getElementsByClassName("port-img")[0]
+            let text="Hey! Welcome to contacts"
+            // a.innerHTML=a.innerHTML+text;
+            let i=0;
+            const typewrite=()=>{
+                if(i<text.length)
+                {
+                    a.innerText=a.innerText+text.charAt(i);
+                    i++;
+                    setTimeout(typewrite,10);
+                }
+            }
+        </script>
+</body>
+</html>
